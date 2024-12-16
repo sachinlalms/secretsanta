@@ -76,6 +76,29 @@ The script will send emails to all participants, notifying them of their Secret 
 
 ---
 
+## Frequently Asked Questions (FAQ)
+
+### 1. **Does this method maintain secrecy?**
+   Yes, this method ensures that participants only receive their assignments via email. Additionally, by enabling the "Delete Emails From Sent Folder" feature, no record of the assignments will remain in the sender's email account.
+
+### 2. **What happens if someone accesses the sender's email account?**
+   If the "Delete Emails From Sent Folder" feature is enabled, the sent emails will be removed after dispatch, reducing the risk of a security breach. However, it's crucial to keep your email account secure by using strong passwords and enabling two-factor authentication.
+
+### 3. **How is randomness ensured in pair assignment?**
+   The script uses Python's `random.shuffle` function to shuffle the participant list, ensuring a fair and random distribution of Secret Santa assignments.
+
+### 4. **Can I verify the assignments?**
+   If you choose to keep the sent emails in the Sent folder, you can verify the assignments. If deletion is enabled, the assignments won't be accessible after they are sent.
+
+### 5. **What if two participants have the same email address?**
+   Each participant must have a unique email address in the `participants.csv` file. Duplicate email addresses will cause errors during the email-sending process.
+
+### 6. **What security measures are in place?**
+   - Emails can be deleted from the Sent folder after sending.
+   - The script uses secure SMTP protocols for email dispatch.
+   - IMAP is used for managing Sent folder deletion.
+
+
 ## Troubleshooting
 
 1. **Error: `ascii` codec can't encode characters:**
