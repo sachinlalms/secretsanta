@@ -7,8 +7,8 @@ from email.mime.multipart import MIMEMultipart
 # Email credentials
 SMTP_SERVER = "smtp.gmail.com"
 IMAP_SERVER = "imap.gmail.com"
-EMAIL = "secretsantakochi@gmail.com"
-PASSWORD = "phloegvmhsfcjtht"
+EMAIL = "****************"
+PASSWORD = "*******************"
 
 # Function to send an email
 def send_email(recipient_email, subject, body):
