@@ -87,13 +87,11 @@ The script will send emails to all participants, notifying them of their Secret 
 ### 3. **How is randomness ensured in pair assignment?**
    The script uses Python's `random.shuffle` function to shuffle the participant list, ensuring a fair and random distribution of Secret Santa assignments.
 
-### 4. **Can I verify the assignments?**
-   If you choose to keep the sent emails in the Sent folder, you can verify the assignments. If deletion is enabled, the assignments won't be accessible after they are sent.
 
-### 5. **What if two participants have the same email address?**
+### 4. **What if two participants have the same email address?**
    Each participant must have a unique email address in the `participants.csv` file. Duplicate email addresses will cause errors during the email-sending process.
 
-### 6. **What security measures are in place?**
+### 5. **What security measures are in place?**
    - Emails can be deleted from the Sent folder after sending.
    - The script uses secure SMTP protocols for email dispatch.
    - IMAP is used for managing Sent folder deletion.
